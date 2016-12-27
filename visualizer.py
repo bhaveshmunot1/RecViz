@@ -70,6 +70,13 @@ def _mergesort(aList, first, last):
         first += 1
         a += 1
 
-mergesort([-3, -2, -1, 1, 3, 4, 6, 8, 9, 10, 12])
-fib(6)
-binary_search(6, [-3, -2, -1, 1, 3, 4, 6, 8, 9, 10, 12])
+def factorial(n):
+    x = RecViz.EnableLogging(inspect.currentframe())
+    if n == 0 :
+        return x.LogAndReturn(1)
+    return x.LogAndReturn(n*factorial(n-1))
+
+mergesort([-3, -1, 1, 3, 6, 8, 10])
+fib(5)
+binary_search(6, [-3, -1, 3, 6, 8, 9, 12])
+factorial(7)
