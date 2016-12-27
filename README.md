@@ -7,7 +7,7 @@ A small library to ease the visualization of recursion
 1. `inspect` module
 
 ### How to use :
-1. Just import 'RecViz' and create an object in recursive function - `x= RecViz.EnableLogging(inspect.currentframe())`
+1. Import 'RecViz' and create an object in recursive function - `x= RecViz.EnableLogging(inspect.currentframe())`
 2. If you want to log the return values as well, instead of returning a value direct use - `return x.LogAndReturn(value)`
 (See visualizer.py for example)
 
